@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule ^([0-9A-Za-z-]*+)/?$ index.php?action=$1 [QSA]
+
+##RewriteRule ^([0-9A-Za-z-]*+)/session=([0-9A-Za-z-]*+)$ index.php?action=$1&session=$2
+
+ErrorDocument 404 /404.html
